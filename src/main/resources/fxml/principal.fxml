@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="742.0" prefWidth="813.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PrincipalController">
+   <children>
+      <SplitPane dividerPositions="0.5051094890510949" layoutX="334.0" layoutY="160.0" prefHeight="160.0" prefWidth="200.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="695.0" prefWidth="276.0">
+               <children>
+                  <ImageView fitHeight="68.0" fitWidth="93.0" layoutX="22.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../styles/canoinhas/aluno.png" />
+                     </image>
+                  </ImageView>
+                  <MenuButton alignment="CENTER" contentDisplay="BOTTOM" layoutX="122.0" layoutY="134.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="33.0" prefWidth="173.0" text="Aluno" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#CadasAluno" text="Cadastrar aluno" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                      <MenuItem mnemonicParsing="false" onAction="#ConsultAluno" text="Consultar aluno" />
+                    </items>
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </MenuButton>
+                  <ImageView fitHeight="79.0" fitWidth="73.0" layoutX="22.0" layoutY="245.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../styles/canoinhas/curso.png" />
+                     </image>
+                  </ImageView>
+                  <MenuButton alignment="CENTER" contentDisplay="BOTTOM" layoutX="122.0" layoutY="265.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="33.0" prefWidth="173.0" text="Curso">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#CadasCurso" text="Cadastrar Curso" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" onAction="#ConsultCurso" text="Consultar Curso" />
+                     </items>
+                  </MenuButton>
+                  <ImageView fitHeight="79.0" fitWidth="73.0" layoutX="22.0" layoutY="376.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../styles/canoinhas/carteirinha.png" />
+                     </image>
+                  </ImageView>
+                  <MenuButton alignment="CENTER" contentDisplay="BOTTOM" layoutX="122.0" layoutY="396.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="33.0" prefWidth="173.0" text="Carteirinha">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#GeraPdf" text="Gerar PDF" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" onAction="#CarteiraIndividual" text="Carteirinha Individual" />
+                     </items>
+                  </MenuButton>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="695.0" prefWidth="387.0">
+               <children>
+                  <ImageView fitHeight="266.0" fitWidth="268.0" layoutX="87.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../styles/canoinhas/canoinhas_vertical_marca2015_PNG.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

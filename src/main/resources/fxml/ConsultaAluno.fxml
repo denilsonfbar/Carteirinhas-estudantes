@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ConsultAluno">
+   <children>
+      <Button layoutX="7.0" layoutY="668.0" mnemonicParsing="false" onAction="#Voltar" text="Voltar" />
+      <Text layoutX="280.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CONSULTA DE ALUNOS" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="37.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOME:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="ConsultMatricula" layoutX="147.0" layoutY="138.0" prefHeight="25.0" prefWidth="242.0" />
+      <Text layoutX="38.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPF:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="37.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MATRICULA:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="ConsultCPF" layoutX="147.0" layoutY="191.0" prefHeight="25.0" prefWidth="242.0" />
+      <TextField fx:id="ConsultNome" layoutX="147.0" layoutY="241.0" prefHeight="25.0" prefWidth="242.0" />
+      <Button layoutX="437.0" layoutY="138.0" mnemonicParsing="false" onAction="#ConsultAlunoMat" text="BUSCAR" />
+      <Button layoutX="437.0" layoutY="191.0" mnemonicParsing="false" onAction="#ConsultAlunoCPF" text="BUSCAR" />
+      <Button layoutX="437.0" layoutY="241.0" mnemonicParsing="false" onAction="#ConsultAlunoName" text="BUSCAR" />
+      <ImageView fitHeight="51.0" fitWidth="51.0" layoutX="192.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../styles/canoinhas/cartoon-1295191_960_720.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="TVConsultAluno" layoutX="25.0" layoutY="295.0" prefHeight="303.0" prefWidth="768.0">
+         <columns>
+            <TableColumn fx:id="TCConsultMat" prefWidth="191.0" text="Matricula" />
+            <TableColumn fx:id="TCConsultCPF" prefWidth="196.0" text="CPF" />
+            <TableColumn fx:id="TCConsultNome" prefWidth="378.0" text="NOME" />
+         </columns>
+      </TableView>
+      <Button layoutX="113.0" layoutY="624.0" mnemonicParsing="false" onAction="#DeletarAluno" prefHeight="25.0" prefWidth="261.0" text="Apagar informações do aluno" />
+      <Button layoutX="458.0" layoutY="624.0" mnemonicParsing="false" onAction="#EditarAluno" text="Editar informações do aluno " />
+   </children>
+</AnchorPane>

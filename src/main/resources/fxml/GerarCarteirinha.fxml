@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="731.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.GeraPdfController">
+   <children>
+      <SplitPane dividerPositions="0.46616541353383456" prefHeight="599.0" prefWidth="672.0" style="-fx-background-color: White;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <ImageView fitHeight="68.0" fitWidth="80.0" layoutX="146.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../styles/canoinhas/carteirinha.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="69.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gerar Carteirinhas" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="39.0" layoutY="395.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Para gerar todas as carteirinhas">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="122.0" layoutY="416.0" mnemonicParsing="false" onAction="#GerarPDF" text="Clique aqui" />
+                  <Button layoutX="11.0" layoutY="679.0" mnemonicParsing="false" onAction="#Voltar" text="Voltar" />
+                  <Text layoutX="66.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Carteirinhas nao impressas:">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="NaoImpress" layoutX="161.0" layoutY="254.0" text="0" underline="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <ImageView fitHeight="231.0" fitWidth="384.0" layoutX="27.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Untitled-2.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="168.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Preview">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="231.0" fitWidth="394.0" layoutX="27.0" layoutY="365.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Untitled-3.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="731.0" prefWidth="800.0" style="-fx-background-color: White;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.GeraIndivi">
+   <children>
+      <ImageView fitHeight="83.0" fitWidth="81.0" layoutX="210.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../styles/canoinhas/carteirinha.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="318.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Carteirinha Individual">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="87.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Matricula:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="Matricula" layoutX="187.0" layoutY="211.0" prefHeight="25.0" prefWidth="255.0" />
+      <Button layoutX="480.0" layoutY="211.0" mnemonicParsing="false" onAction="#ConsultAlunoMat" text="Buscar" />
+      <TableView fx:id="TVConsultAluno" layoutX="68.0" layoutY="300.0" prefHeight="200.0" prefWidth="632.0">
+        <columns>
+          <TableColumn fx:id="TCConsultMat" prefWidth="138.0" text="Matricula" />
+            <TableColumn fx:id="TCConsultNome" prefWidth="338.0" text="Nome" />
+            <TableColumn fx:id="TCConsultCPF" prefWidth="155.0" text="CPF" />
+        </columns>
+      </TableView>
+      <Button layoutX="292.0" layoutY="598.0" mnemonicParsing="false" onAction="#GerarIndividu" text="Gerar Carteirinha Individual" />
+      <Button layoutX="30.0" layoutY="681.0" mnemonicParsing="false" onAction="#Voltar" text="Voltar" />
+   </children>
+</AnchorPane>
